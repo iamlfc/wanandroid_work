@@ -34,6 +34,7 @@ class SystemTypeNormalActivity : BaseActivity() {
 
     override fun initData() {
         mToolbar.setNavigationOnClickListener { onBackPressed() }
+
     }
 
     private fun initViewPager() {
