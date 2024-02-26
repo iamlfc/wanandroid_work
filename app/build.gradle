@@ -40,6 +40,9 @@ android {
             exclude 'META-INF/groovy/org.codehaus.groovy.runtime.ExtensionModule'
         }
     }
+    viewBinding {
+        enabled = true
+    }
     buildTypes {
         debug {
             minifyEnabled false

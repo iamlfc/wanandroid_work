@@ -19,7 +19,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".ui.TestKotlinRetrofitDemoAct"
+            android:name=".test.TestKotlinRetrofitDemoAct"
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
