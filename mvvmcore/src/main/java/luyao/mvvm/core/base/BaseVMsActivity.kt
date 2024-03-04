@@ -29,6 +29,7 @@ abstract class BaseVMsActivity<VB : ViewBinding> : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
         super.onCreate(savedInstanceState)
         _binding = bindingInflater.invoke(layoutInflater)
+        // TODO: 取消顶部的状态栏
         super.setContentView(R.layout.activity_base)
         startObserve()
         initView()
