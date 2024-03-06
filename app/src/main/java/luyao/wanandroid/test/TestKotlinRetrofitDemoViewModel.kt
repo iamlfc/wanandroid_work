@@ -10,12 +10,13 @@ import kotlinx.coroutines.withContext
 import luyao.mvvm.core.Result
 import luyao.mvvm.core.base.BaseViewModel
 import luyao.wanandroid.model.repository.ShareRepository
+import luyao.wanandroid.model.repository.TestRetorfitRepository
 
 /**
  * Created by luyao
  * on 2019/10/15 15:21
  */
-class TestKotlinRetrofitDemoViewModel(private val repository: ShareRepository) : BaseViewModel() {
+class TestKotlinRetrofitDemoViewModel(private val repository: TestRetorfitRepository) : BaseViewModel() {
 
     val title = ObservableField<String>("")
     val url = ObservableField<String>("")

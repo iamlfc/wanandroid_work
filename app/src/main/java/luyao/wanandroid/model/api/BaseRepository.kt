@@ -3,6 +3,7 @@ package luyao.wanandroid.model.api
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.coroutineScope
 import luyao.mvvm.core.Result
+import luyao.wanandroid.model.bean.BaseResp
 import luyao.wanandroid.model.bean.WanResponse
 import java.io.IOException
 
@@ -37,6 +38,18 @@ open class BaseRepository {
             }
         }
     }
-
+    suspend fun <T : Any> executeResponse2(response: BaseResp<T>, successBlock: (suspend CoroutineScope.() -> Unit)? = null,
+                                          errorBlock: (suspend CoroutineScope.() -> Unit)? = null): Result<T> {
+        return coroutineScope {
+            if (response.code == -1) {
+                errorBlock?.let { it() }
+                Result.Error(IOException(response.msg))
+            } else {
+                successBlock?.let { it() }
+//                todo 解决报错问题
+                Result.Success(response.result)
+            }
+        }
+    }
 
 }
