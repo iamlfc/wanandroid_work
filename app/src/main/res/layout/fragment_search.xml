@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewModel"
-            type="luyao.wanandroid.ui.search.SearchViewModel" />
+            type="com.luyao.wanandroid.ui.search.SearchViewModel" />
 
         <variable
             name="adapter"

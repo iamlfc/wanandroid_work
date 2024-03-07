@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="luyao.wanandroid.ui.share.ShareViewModel" />
+            type="com.luyao.wanandroid.ui.share.ShareViewModel" />
     </data>
 
 

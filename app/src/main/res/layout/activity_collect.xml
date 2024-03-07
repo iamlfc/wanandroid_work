@@ -5,7 +5,7 @@
     <data>
         <variable
             name="viewModel"
-            type="luyao.wanandroid.ui.square.ArticleViewModel" />
+            type="com.luyao.wanandroid.ui.square.ArticleViewModel" />
     </data>
 
     <LinearLayout

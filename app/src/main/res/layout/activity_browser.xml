@@ -11,12 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="3dp" />
 
-    <luyao.wanandroid.view.X5WebView
+    <com.luyao.wanandroid.view.X5WebView
         android:id="@+id/webView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </luyao.wanandroid.view.X5WebView>
+    </com.luyao.wanandroid.view.X5WebView>
 
 
 </LinearLayout>

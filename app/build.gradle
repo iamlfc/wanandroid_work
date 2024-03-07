@@ -12,7 +12,7 @@ apply from: '../test_dependencies.gradle'
 android {
     compileSdkVersion Versions.compileSdk
     defaultConfig {
-        applicationId "luyao.wanandroid"
+        applicationId "com.luyao.wanandroid"
         minSdkVersion Versions.minSdk
         targetSdkVersion Versions.targetSdk
         versionCode Versions.versionCode
