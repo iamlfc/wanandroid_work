@@ -1,2 +1,2 @@
-include ':ClassFixer'
+//include ':ClassFixer'
 include ':app', ':ktx', ':mvvmcore'
