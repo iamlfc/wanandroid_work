@@ -2,7 +2,7 @@ package com.luyao.wanandroid.ui
 
 import android.os.Bundle
 import com.luyao.mvvm.core.base.BaseActivity
-import luyao.wanandroid.R
+import com.luyao.wanandroid.R
 
 /**
  * Created by luyao

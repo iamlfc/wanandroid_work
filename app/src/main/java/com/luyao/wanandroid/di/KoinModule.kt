@@ -1,16 +1,16 @@
 package com.luyao.wanandroid.di
 
 import com.luyao.wanandroid.CoroutinesDispatcherProvider
-import luyao.wanandroid.model.api.WanRetrofitClient
-import luyao.wanandroid.model.api.WanService
-import luyao.wanandroid.model.repository.*
-import luyao.wanandroid.ui.login.LoginViewModel
-import luyao.wanandroid.ui.navigation.NavigationViewModel
-import luyao.wanandroid.ui.project.ProjectViewModel
-import luyao.wanandroid.ui.search.SearchViewModel
-import luyao.wanandroid.ui.share.ShareViewModel
-import luyao.wanandroid.ui.square.ArticleViewModel
-import luyao.wanandroid.ui.system.SystemViewModel
+import com.luyao.wanandroid.model.api.WanRetrofitClient
+import com.luyao.wanandroid.model.api.WanService
+import com.luyao.wanandroid.model.repository.*
+import com.luyao.wanandroid.ui.login.LoginViewModel
+import com.luyao.wanandroid.ui.navigation.NavigationViewModel
+import com.luyao.wanandroid.ui.project.ProjectViewModel
+import com.luyao.wanandroid.ui.search.SearchViewModel
+import com.luyao.wanandroid.ui.share.ShareViewModel
+import com.luyao.wanandroid.ui.square.ArticleViewModel
+import com.luyao.wanandroid.ui.system.SystemViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 

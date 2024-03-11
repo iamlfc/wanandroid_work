@@ -10,7 +10,6 @@ import android.view.ViewTreeObserver
 import android.widget.ImageView
 import androidx.annotation.Px
 import androidx.annotation.RequiresApi
-import androidx.core.view.drawToBitmap
 
 /**
  * Created by luyao

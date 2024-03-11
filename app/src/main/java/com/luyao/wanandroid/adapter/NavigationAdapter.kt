@@ -9,10 +9,10 @@ import com.chad.library.adapter.base.BaseViewHolder
 import com.zhy.view.flowlayout.FlowLayout
 import com.zhy.view.flowlayout.TagAdapter
 import com.zhy.view.flowlayout.TagFlowLayout
-import luyao.wanandroid.R
-import luyao.wanandroid.model.bean.Article
-import luyao.wanandroid.model.bean.Navigation
-import luyao.wanandroid.ui.BrowserActivity
+import com.luyao.wanandroid.R
+import com.luyao.wanandroid.model.bean.Article
+import com.luyao.wanandroid.model.bean.Navigation
+import com.luyao.wanandroid.ui.BrowserActivity
 
 
 /**

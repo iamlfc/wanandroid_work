@@ -1,6 +1,6 @@
 package com.luyao.wanandroid.model.api
 
-import luyao.wanandroid.BuildConfig
+import com.luyao.wanandroid.BuildConfig
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

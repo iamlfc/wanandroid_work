@@ -5,9 +5,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import com.luyao.mvvm.core.base.BaseVMActivity
 import com.luyao.mvvm.core.base.BaseVMsActivity
-import luyao.wanandroid.R
-import luyao.wanandroid.databinding.ActivityShareBinding
-import luyao.wanandroid.databinding.ActivityTestKotlinRetrofitDemoBinding
+import com.luyao.wanandroid.R
+import com.luyao.wanandroid.databinding.ActivityShareBinding
+import com.luyao.wanandroid.databinding.ActivityTestKotlinRetrofitDemoBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class TestKotlinRetrofitDemoAct : BaseVMsActivity<ActivityTestKotlinRetrofitDemoBinding>() {

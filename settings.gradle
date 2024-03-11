@@ -1,2 +1,5 @@
 //include ':ClassFixer'
 include ':app', ':ktx', ':mvvmcore'
+include ':Common'
+
+rootProject.name = "WanAndroidDemo"

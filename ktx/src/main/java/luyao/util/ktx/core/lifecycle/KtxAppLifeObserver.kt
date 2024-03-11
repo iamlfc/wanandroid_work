@@ -3,8 +3,6 @@ package luyao.util.ktx.core.lifecycle
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
-import luyao.util.ktx.Ktx
-import luyao.util.ktx.ext.toast
 
 /**
  * Created by luyao

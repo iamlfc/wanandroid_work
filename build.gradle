@@ -1,4 +1,4 @@
-import luyao.dependencies.Versions
+import com.luyao.dependencies.Versions
 
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
@@ -9,8 +9,13 @@ buildscript {
     }
     repositories {
         google()
-        jcenter()
         mavenCentral()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        maven { url "https://mirrors.tencent.com/repository/maven/tencent_public" }
+        maven { url "https://mirrors.tencent.com/repository/maven/liteavsdk" }
+        maven { url "https://mirrors.tencent.com/nexus/repository/maven-public/" }
         maven {
             url uri('./repo')
         }
@@ -29,9 +34,13 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
         mavenCentral()
-        maven { url "https://jitpack.io" }
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        maven { url "https://mirrors.tencent.com/repository/maven/tencent_public" }
+        maven { url "https://mirrors.tencent.com/repository/maven/liteavsdk" }
+        maven { url "https://mirrors.tencent.com/nexus/repository/maven-public/" }
         maven { url uri('./repo') }
 
     }

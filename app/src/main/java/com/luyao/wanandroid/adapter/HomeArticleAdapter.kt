@@ -2,9 +2,9 @@ package com.luyao.wanandroid.adapter
 
 import com.luyao.mvvm.core.util.Timer
 import com.luyao.wanandroid.APP_START
-import luyao.wanandroid.BR
-import luyao.wanandroid.R
-import luyao.wanandroid.model.bean.Article
+import com.luyao.wanandroid.BR
+import com.luyao.wanandroid.R
+import com.luyao.wanandroid.model.bean.Article
 
 /**
  * Created by luyao

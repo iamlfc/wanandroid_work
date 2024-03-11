@@ -1,9 +1,9 @@
 package com.luyao.wanandroid.model.repository
 
 import com.luyao.mvvm.core.Result
-import luyao.wanandroid.model.api.BaseRepository
-import luyao.wanandroid.model.api.TestRetrofitClient
-import luyao.wanandroid.model.bean.VersionBean
+import com.luyao.wanandroid.model.api.BaseRepository
+import com.luyao.wanandroid.model.api.TestRetrofitClient
+import com.luyao.wanandroid.model.bean.VersionBean
 
 /**
  * Created by luyao

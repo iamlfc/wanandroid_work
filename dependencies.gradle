@@ -1,0 +1,141 @@
+import com.luyao.dependencies.Deps
+import com.luyao.dependencies.Versions
+
+apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion Versions.compileSdk
+
+    defaultConfig {
+        minSdkVersion Versions.minSdk
+        targetSdkVersion Versions.targetSdk
+        versionCode 102
+        versionName "1.0.2"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+     /*   ndk {
+            abiFilters 'armeabi-v7a', 'arm64-v8a'
+        }*/
+
+
+
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+            }
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('youcaihua.jks')
+            storePassword 'ych2024'
+            keyAlias 'youcaihua'
+            keyPassword 'ych2024'
+        }
+        release {
+            storeFile file('youcaihua.jks')
+            storePassword 'ych2024'
+            keyAlias 'youcaihua'
+            keyPassword 'ych2024'
+        }
+    }
+
+    buildTypes {
+        release {
+
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            shrinkResources false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+//configurations.all {
+//    resolutionStrategy {
+//        force 'androidx.core:core:1.6.0'
+//    }
+//}
+
+dependencies {
+    api fileTree(dir: "libs", include: ["*.jar", "*.aar"])
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation Deps.appcompat
+    implementation Deps.constraintlayout
+//    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+//    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation Deps.retrofit
+    implementation Deps.retrofit_converter_gson
+    implementation Deps.okhttp_logging_interceptor
+    implementation Deps.swiperefreshlayout
+    implementation Deps.material
+    implementation Deps.circleimageview
+    debugImplementation Deps.leakCanary
+    implementation Deps.baseRecyclerViewAdapterHelper
+    implementation Deps.banner
+    implementation Deps.glide
+    kapt Deps.glide_compiler
+    implementation Deps.cardView
+    implementation Deps.verticalTabLayout
+    implementation Deps.flowLayout
+    implementation Deps.persistentCookieJar
+    implementation Deps.licensesDialog
+    implementation Deps.material_dialogs_input
+    implementation Deps.livedata_ktx
+    implementation Deps.viewPager2
+
+    implementation Deps.koin_android
+    implementation Deps.koin_androidx_scope
+    implementation Deps.koin_androidx_viewmodel
+
+    implementation 'com.tencent:mmkv-static:1.2.10'
+
+//    implementation "com.google.dagger:hilt-android:2.28-alpha"
+//    kapt "com.google.dagger:hilt-android-compiler:2.28-alpha"
+//    implementation 'androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha01'
+//    kapt 'androidx.hilt:hilt-compiler:1.0.0-alpha01'
+
+
+    // test
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
+    implementation "com.tencent.tbs.tbssdk:sdk:43697"
+}

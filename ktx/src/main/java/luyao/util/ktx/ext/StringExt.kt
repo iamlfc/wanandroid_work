@@ -1,7 +1,5 @@
 package luyao.util.ktx.ext
 
-import android.widget.TextView
-
 /**
  * Created by luyao
  * on 2019/7/23 9:25

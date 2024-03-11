@@ -9,8 +9,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import com.luyao.mvvm.core.Result
 import com.luyao.mvvm.core.base.BaseViewModel
-import luyao.wanandroid.model.repository.ShareRepository
-import luyao.wanandroid.model.repository.TestRetorfitRepository
+import com.luyao.wanandroid.model.repository.TestRetorfitRepository
 
 /**
  * Created by luyao
@@ -37,7 +36,7 @@ class TestKotlinRetrofitDemoViewModel(private val repository: TestRetorfitReposi
 
             withContext(Dispatchers.Main){ emitUiState(showProgress = true)}
 
-            val result = repository.shareArticle(title.get()?:"", url.get()?:"")
+            val result = repository.shareArticle(1, url.get()?:"")
 
 
             withContext(Dispatchers.Main){

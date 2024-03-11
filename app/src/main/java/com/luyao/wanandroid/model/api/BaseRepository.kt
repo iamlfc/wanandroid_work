@@ -3,8 +3,8 @@ package com.luyao.wanandroid.model.api
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.coroutineScope
 import com.luyao.mvvm.core.Result
-import luyao.wanandroid.model.bean.BaseResp
-import luyao.wanandroid.model.bean.WanResponse
+import com.luyao.wanandroid.model.bean.BaseResp
+import com.luyao.wanandroid.model.bean.WanResponse
 import java.io.IOException
 
 /**

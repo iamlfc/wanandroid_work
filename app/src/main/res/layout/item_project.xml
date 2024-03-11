@@ -4,10 +4,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <import type="luyao.wanandroid.R" alias="appR" />
+        <import type="com.luyao.wanandroid.R" alias="appR" />
         <variable
             name="article"
-            type="luyao.wanandroid.model.bean.Article" />
+            type="com.luyao.wanandroid.model.bean.Article" />
     </data>
 
     <com.google.android.material.card.MaterialCardView

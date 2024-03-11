@@ -1,19 +1,5 @@
 package luyao.wanandroid.ui.login
 
-import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.nhaarman.mockitokotlin2.mock
-import com.nhaarman.mockitokotlin2.whenever
-import junit.framework.Assert.assertEquals
-import kotlinx.coroutines.runBlocking
-import com.luyao.mvvm.core.Result
-import luyao.wanandroid.model.bean.User
-import luyao.wanandroid.model.repository.LoginRepository
-import luyao.wanandroid.provideFakeCoroutinesDispatcherProvider
-import luyao.wanandroid.test.getOrAwaitValue
-import org.junit.Rule
-import org.junit.Test
-import java.io.IOException
-
 /**
  * Created by luyao
  * on 2019/12/16 10:13

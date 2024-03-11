@@ -1,6 +1,6 @@
 package com.luyao.wanandroid
 
-import luyao.wanandroid.util.Preference
+import com.luyao.wanandroid.util.Preference
 
 /**
  * Created by luyao

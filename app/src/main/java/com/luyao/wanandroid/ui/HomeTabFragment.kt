@@ -4,12 +4,12 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.fragment_home_tab.*
 import com.luyao.mvvm.core.base.BaseFragment
-import luyao.wanandroid.R
-import luyao.wanandroid.ui.main.MainFragment
-import luyao.wanandroid.ui.profile.ProfileFragment
-import luyao.wanandroid.ui.project.BlogFragment
-import luyao.wanandroid.ui.project.ProjectFragment
-import luyao.wanandroid.ui.search.SearchFragment
+import com.luyao.wanandroid.R
+import com.luyao.wanandroid.ui.main.MainFragment
+import com.luyao.wanandroid.ui.profile.ProfileFragment
+import com.luyao.wanandroid.ui.project.BlogFragment
+import com.luyao.wanandroid.ui.project.ProjectFragment
+import com.luyao.wanandroid.ui.search.SearchFragment
 
 /**
  * 这是首页 Tab

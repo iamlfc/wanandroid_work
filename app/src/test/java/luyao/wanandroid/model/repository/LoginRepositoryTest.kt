@@ -3,10 +3,8 @@ package luyao.wanandroid.model.repository
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
-import junit.framework.Assert.assertEquals
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runBlockingTest
-import com.luyao.mvvm.core.Result
 import luyao.wanandroid.model.api.WanService
 import luyao.wanandroid.model.bean.User
 import luyao.wanandroid.model.bean.WanResponse

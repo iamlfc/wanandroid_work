@@ -1,5 +1,5 @@
-import luyao.dependencies.Deps
-import luyao.dependencies.Versions
+import com.luyao.dependencies.Deps
+import com.luyao.dependencies.Versions
 
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'

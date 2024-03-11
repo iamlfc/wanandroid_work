@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="luyao.wanandroid.util.ExtKt"/>
+        <import type="com.luyao.wanandroid.util.ExtKt"/>
         <variable
             name="systemParent"
-            type="luyao.wanandroid.model.bean.SystemParent" />
+            type="com.luyao.wanandroid.model.bean.SystemParent" />
     </data>
 
     <com.google.android.material.card.MaterialCardView

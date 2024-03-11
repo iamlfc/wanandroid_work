@@ -4,7 +4,7 @@ import com.franmontiel.persistentcookiejar.PersistentCookieJar
 import com.franmontiel.persistentcookiejar.cache.SetCookieCache
 import com.franmontiel.persistentcookiejar.persistence.SharedPrefsCookiePersistor
 import com.luyao.wanandroid.App
-import luyao.wanandroid.util.NetWorkUtils
+import com.luyao.wanandroid.util.NetWorkUtils
 import okhttp3.Cache
 import okhttp3.CacheControl
 import okhttp3.OkHttpClient

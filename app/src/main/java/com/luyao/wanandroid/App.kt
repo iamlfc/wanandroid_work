@@ -4,8 +4,8 @@ import android.app.Application
 import android.content.Context
 import com.tencent.mmkv.MMKV
 import com.luyao.mvvm.core.util.Timer
-import luyao.wanandroid.di.appModule
-import luyao.wanandroid.model.bean.User
+import com.luyao.wanandroid.di.appModule
+import com.luyao.wanandroid.model.bean.User
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import kotlin.properties.Delegates

@@ -16,7 +16,7 @@
 
         <provider
                 android:authorities="${applicationId}.KtxInstaller"
-                android:name=".Ktx"
+                android:name="com.luyao.util.ktx.Ktx"
                 android:exported="false"/>
 
     </application>

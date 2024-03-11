@@ -2,7 +2,6 @@ package luyao.util.ktx.core.util
 
 import android.webkit.MimeTypeMap
 import java.util.*
-import java.util.regex.Pattern
 
 private const val ALL_MIME_TYPES = "*/*"
 val MIME_TYPES = HashMap<String, String>().apply {

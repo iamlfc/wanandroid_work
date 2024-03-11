@@ -1,7 +1,7 @@
 package com.luyao.wanandroid.view
 
 import com.chad.library.adapter.base.loadmore.LoadMoreView
-import luyao.wanandroid.R
+import com.luyao.wanandroid.R
 
 /**
  * Created by Lu

@@ -7,15 +7,14 @@ import kotlinx.android.synthetic.main.activity_collect.*
 import kotlinx.android.synthetic.main.title_layout.*
 import com.luyao.mvvm.core.base.BaseVMActivity
 import com.luyao.mvvm.core.view.SpaceItemDecoration
+import com.luyao.wanandroid.R
+import com.luyao.wanandroid.adapter.HomeArticleAdapter
+import com.luyao.wanandroid.databinding.ActivityCollectBinding
+import com.luyao.wanandroid.ui.BrowserActivity
+import com.luyao.wanandroid.ui.square.ArticleViewModel
+import com.luyao.wanandroid.view.CustomLoadMoreView
 import luyao.util.ktx.ext.dp
 import luyao.util.ktx.ext.startKtxActivity
-import luyao.util.ktx.ext.toast
-import luyao.wanandroid.R
-import luyao.wanandroid.adapter.HomeArticleAdapter
-import luyao.wanandroid.databinding.ActivityCollectBinding
-import luyao.wanandroid.ui.BrowserActivity
-import luyao.wanandroid.ui.square.ArticleViewModel
-import luyao.wanandroid.view.CustomLoadMoreView
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 /**
