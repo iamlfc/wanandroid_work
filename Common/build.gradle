@@ -3,7 +3,6 @@ apply plugin: 'com.android.library'
 //apply plugin: 'kotlin-android-extensions'
 //apply plugin: 'kotlin-kapt'
 
-apply from: '../test_dependencies.gradle'
 apply from: '../dependencies.gradle'
 
 

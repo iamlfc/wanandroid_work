@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment
  * Created by luyao
  * on 2019/12/27 9:39
  */
-abstract class BaseVMFragment<T:ViewDataBinding>(@LayoutRes val layoutId: Int) : Fragment(layoutId) {
+abstract class BaseVMFragment<T:ViewDataBinding>() : Fragment() {
 
     private  var _binding: T? = null
     protected val binding get() = _binding!!
@@ -26,6 +26,7 @@ abstract class BaseVMFragment<T:ViewDataBinding>(@LayoutRes val layoutId: Int) :
         lifecycleOwner = this@BaseVMFragment
     }
 
+    // TODO:  融合 sh和 qlb的 baseFragment  
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = binding(inflater,layoutId,container)
         return binding.root
